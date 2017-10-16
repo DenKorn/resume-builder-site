@@ -4,6 +4,7 @@ return [
     'modules' => [
         'user' => [
             'class' => 'dektrium\user\Module',
+            'admins' => ['admin'],
             'mailer' => [
                 'sender'                => 'no-reply@resume-builder.com',
                 'welcomeSubject'        => 'Welcome subject',
@@ -16,6 +17,18 @@ return [
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',
+        ],
+        'user' => [
+            'identityCookie' => [
+                'name' => '_identity-common',
+                'httpOnly' => true
+            ]
+        ],
+        'session' => [
+            'name' => 'advanced-common',
+            'cookieParams' => [
+                'httpOnly' => true,
+            ],
         ],
     ],
 ];

@@ -1,4 +1,7 @@
 <?php
+
+$commonDomain = '.resume-builder.loc';
+
 return [
     'components' => [
         'db' => [
@@ -11,10 +14,24 @@ return [
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             'viewPath' => '@common/mail',
-            // send all mails to a file by default. You have to set
-            // 'useFileTransport' to false and configure a transport
-            // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
+        'request' => [
+            'cookieValidationKey' => 'WQKXVGp3KxZNkE_CcoEGnLEcbaV9jz1f',
+        ],
+        // Работает до сих пор не до конца верно, временно закомментил, иначе не получалось логиниться
+        // https://stackoverflow.com/questions/43418088/yii2-advanced-share-session-between-frontend-and-mainsite-duplicate-of-fronte
+//        'user' => [
+//            'identityCookie' => [
+//                'domain' => $commonDomain,
+//                'path' => '/'
+//            ]
+//        ],
+//        'session' => [
+//            'cookieParams' => [
+//                'domain' => $commonDomain,
+//                'savePath' => __DIR__.'../../sessionTmp'
+//            ],
+//        ],
     ],
 ];

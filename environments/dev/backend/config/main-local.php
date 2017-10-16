@@ -1,12 +1,6 @@
 <?php
 
 $config = [
-    'components' => [
-        'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'W1KX2Gp3KxZNkE_Cc4EGnLEcbaV9jz1f',
-        ],
-    ],
 ];
 
 if (!YII_ENV_TEST) {

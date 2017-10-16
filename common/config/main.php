@@ -18,14 +18,9 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-        'user' => [
-            'identityCookie' => [
-                'name' => '_identity-common',
-                'httpOnly' => true
-            ]
-        ],
         'session' => [
             'name' => 'advanced-common',
+            'class' => 'yii\web\DbSession',
             'cookieParams' => [
                 'httpOnly' => true,
             ],

@@ -68,6 +68,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+//        var_dump(Yii::$app->session->id);
+//        die();
         return $this->render('index');
     }
 

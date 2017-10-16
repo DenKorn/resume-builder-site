@@ -13,7 +13,6 @@ return [
     'bootstrap' => ['log'],
     'modules' => [
         'user' => [
-            // following line will restrict access to profile, recovery, registration and settings controllers from backend
             'as backend' => 'dektrium\user\filters\BackendFilter',
         ],
     ],
@@ -43,6 +42,12 @@ return [
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
+        ],
+        'user' => [
+            'identityCookie' => [
+                'name' => '_identity-common',
+                'httpOnly' => true
+            ]
         ],
         /*
         'urlManager' => [

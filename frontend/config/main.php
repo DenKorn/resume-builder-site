@@ -44,6 +44,12 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'user' => [
+            'identityCookie' => [
+                'name' => '_identity-common',
+                'httpOnly' => true
+            ]
+        ],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,

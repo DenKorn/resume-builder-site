@@ -6,6 +6,9 @@ $params = array_merge(
     require(__DIR__ . '/params-local.php')
 );
 
+$AVAILABLE_THEMES = ['basic', 'adminLTE'];
+$themeName = $AVAILABLE_THEMES[1];
+
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
@@ -17,14 +20,21 @@ return [
         ],
     ],
     'components' => [
+        'assetManager' => [
+            'bundles' => [
+                'dmstr\web\AdminLteAsset' => [
+//                    'skin' => 'skin-purple', TODO потом изменить
+                ],
+            ],
+        ],
 		'view' => [
             'theme' => [
-                'basePath' => '@app/themes/basic',
-                'baseUrl' => '@web/themes/basic',
+                'basePath' => "@app/themes/{$themeName}",
+                'baseUrl' => "@web/themes/{$themeName}",
                 'pathMap' => [
-                    '@app/views' => '@app/themes/basic',
-					'@app/modules' => '@app/themes/basic/modules',
-					'@app/widgets' => '@app/themes/basic/widgets',
+                    '@app/views' => "@app/themes/{$themeName}",
+					'@app/modules' => "@app/themes/{$themeName}/modules",
+					'@app/widgets' => "@app/themes/{$themeName}/widgets",
                 ],
             ],
         ],

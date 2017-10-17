@@ -41,15 +41,15 @@ AppAsset::register($this);
         ['label' => 'Обратная связь', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/user/registration/register']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/user/security/login']];
+        $menuItems[] = ['label' => 'Регистрация', 'url' => ['/user/registration/register']];
+        $menuItems[] = ['label' => 'Войти', 'url' => ['/user/security/login']];
     } else {
         $menuItems[] = ['label' => 'Профиль', 'url' => ['/user/profile']];
         $menuItems[] = ['label' => 'Настройки', 'url' => ['/user/settings']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/user/security/logout'], 'post')
             . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
+                'Выйти (' . Yii::$app->user->identity->username . ')',
                 ['class' => 'btn btn-link logout']
             )
             . Html::endForm()

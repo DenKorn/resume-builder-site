@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -29,16 +29,17 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'Resume builder',
+        'brandLabel' => 'RESUME BUILDER',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-inverse navbar-fixed-top collapse navbar-collapse',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Главная', 'url' => ['/site/index']],
-        ['label' => 'О нас', 'url' => ['/site/about']],
-        ['label' => 'Обратная связь', 'url' => ['/site/contact']],
+        ['label' => 'О продукте', 'url' => ['/site/about']],
+        ['label' => 'Возможности', 'url' => ['/site/contact']],
+	['label' => 'Отзывы', 'url' => ['/site/contact']],
+	['label' => 'Контакты', 'url' => ['/site/contact']]
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Регистрация', 'url' => ['/user/registration/register']];

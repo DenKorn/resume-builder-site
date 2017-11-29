@@ -6,12 +6,12 @@ return [
         ],
         'user' => [
             'identityCookie' => [
-//                'domain' => '.resume-builder.loc' TODO заполнить, если продакшн будет переведен на хостинг с поддержкой субдоменов
+                'domain' => '.resume-builder.tk'
             ]
         ],
         'session' => [
             'cookieParams' => [
-//                'domain' => '.resume-builder.loc', TODO заполнить, если продакшн будет переведен на хостинг с поддержкой субдоменов
+                'domain' => '.resume-builder.tk',
             ],
         ],
     ]

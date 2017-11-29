@@ -4,9 +4,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=resume_builder_dev',
-            'username' => 'root',
-            'password' => '',
+            'dsn' => 'mysql:host=localhost;dbname=kgnyaakxkd',
+            'username' => 'kgnyaakxkd',
+            'password' => 'Yd7KjfZk94',
             'charset' => 'utf8',
         ],
         'mailer' => [

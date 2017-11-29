@@ -9,8 +9,14 @@ return [
             'charset' => 'utf8',
         ],
         'mailer' => [
-            'class' => 'yii\swiftmailer\Mailer',
-            'viewPath' => '@common/mail',
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.gmail.com',
+                'username' => 'topscrumboard@gmail.com',
+                'password' => '', // TODO после обновлиения закинуть сюда
+                'port' => '587',
+                'encryption' => 'tls',
+            ],
         ],
     ],
 ];

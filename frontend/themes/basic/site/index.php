@@ -1,10 +1,10 @@
-<?php
+﻿<?php
 
 /* @var $this yii\web\View */
 use frontend\assets\LandingAsset;
-
 LandingAsset::register($this);
-$this->title = 'ResumeBuilder - конструктор резюме';
+
+$this->title = 'Resume builder - главная';
 ?>
 <div class="landing-content">
 

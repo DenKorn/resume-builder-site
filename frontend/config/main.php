@@ -6,6 +6,7 @@ $params = array_merge(
     require(__DIR__ . '/params-local.php')
 );
 
+
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
@@ -26,6 +27,8 @@ return [
                     '@app/views' => '@app/themes/basic',
 					'@app/modules' => '@app/themes/basic/modules',
 					'@app/widgets' => '@app/themes/basic/widgets',
+
+                    '@vendor/dektrium/yii2-user/views' => '@app/themes/basic/modules/user'
                 ],
             ],
         ],

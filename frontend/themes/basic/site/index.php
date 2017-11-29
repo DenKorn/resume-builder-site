@@ -2,6 +2,9 @@
 
 /* @var $this yii\web\View */
 
+use frontend\assets\LandingAsset;
+LandingAsset::register($this);
+
 $this->title = 'Resume builder - главная';
 ?>
 <div class="site-index">

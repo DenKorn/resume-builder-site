@@ -18,7 +18,7 @@ use yii\helpers\Html;
 
 $this->title = empty($profile->name) ? Html::encode($profile->user->username) : Html::encode($profile->name);
 $this->params['breadcrumbs'][] = $this->title;
-?>sadfsdfsdafk ajsdnfj hasd;ofn sa[iodnf asdf sadf sdaf sadf sdfas fasdfasd fsdfsadfasdfsfasfsadfsadfasfsdf
+?>
 <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6">
         <div class="row">
@@ -28,7 +28,6 @@ $this->params['breadcrumbs'][] = $this->title;
                     'alt' => $profile->user->username,
                 ]) ?>
             </div>
-            ОТОБРАЖЕНО ИЗ ТЕМЫ!
             <div class="col-sm-6 col-md-8">
                 <h4><?= $this->title ?></h4>
                 <ul style="padding: 0; list-style: none outside none;">
@@ -58,4 +57,3 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
-sadfsdfsdfasdfasdfasfasdfs

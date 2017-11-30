@@ -96,8 +96,27 @@ class SiteController extends Controller
      */
     public function actionFaq()
     {
-        return $this->render('contact', [
-            'model' => $model,
+        return $this->render('faq', [
+        ]);
+    }
+
+    /**
+     * @return string
+     */
+    public function actionFeedbacks()
+    {
+        // TODO создать таблицу отзыввов
+        // вытянуть отзывы и передать в модель
+        return $this->render('feedbacks', [
+        ]);
+    }
+
+    /**
+     * @return string
+     */
+    public function actionAbilities()
+    {
+        return $this->render('abilities', [
         ]);
     }
 

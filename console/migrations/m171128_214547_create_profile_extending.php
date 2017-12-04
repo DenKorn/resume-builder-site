@@ -130,7 +130,7 @@ class m171128_214547_create_profile_extending extends Migration
     private function createProfileGraduations()
     {
         $this->db->createCommand("
-            CREATE TABLE profile_resume (
+            CREATE TABLE profile_graduations (
               id int(11) NOT NULL AUTO_INCREMENT,
               user__id int(11) NOT NULL ,
               graduation_title CHAR(255) NOT NULL ,
@@ -141,7 +141,7 @@ class m171128_214547_create_profile_extending extends Migration
             ENGINE = INNODB
             CHARACTER SET utf8
             COLLATE utf8_general_ci;
-        ");
+        ")->execute();
     }
 
     private function createProfileSkills()

@@ -17,6 +17,9 @@ return [
             // following line will restrict access to admin controller from frontend application
             'as frontend' => 'dektrium\user\filters\FrontendFilter',
         ],
+        'resume' => [
+            'class' => 'frontend\modules\resume\Module',
+        ]
     ],
     'components' => [
 		'view' => [
@@ -28,6 +31,7 @@ return [
 					'@app/modules' => '@app/themes/basic/modules',
 					'@app/widgets' => '@app/themes/basic/widgets',
 
+					'@app/modules/resume/views' => '@app/themes/basic/modules/resume',
                     '@vendor/dektrium/yii2-user/views' => '@app/themes/basic/modules/user'
                 ],
             ],

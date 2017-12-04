@@ -13,6 +13,7 @@ return [
                 'recoverySubject'       => 'Recovery subject',
             ],
         ],
+
     ],
     'components' => [
         'mailer' => [

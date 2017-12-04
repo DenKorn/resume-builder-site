@@ -37,11 +37,11 @@ $networksVisible = count(Yii::$app->authClientCollection->clients) > 0;
             'items' => [
                 ['label' => Yii::t('user', 'Profile'), 'url' => ['/user/settings/profile']],
                 ['label' => Yii::t('user', 'Account'), 'url' => ['/user/settings/account']],
-                ['label' => Yii::t('user', 'Education'), 'url' => ['/resume/graduations']],
-                ['label' => Yii::t('user', 'Languages'), 'url' => ['/resume/languages']],
-                ['label' => Yii::t('user', 'Skills'), 'url' => ['/resume/skills']],
-                ['label' => Yii::t('user', 'Experience'), 'url' => ['/resume/past-work']],
-                ['label' => Yii::t('user', 'Additional'), 'url' => ['/resume/additional']],
+                ['label' => Yii::t('user', 'Education (не трогать пока)'), 'url' => ['/resume/graduations']],
+                ['label' => Yii::t('user', 'Languages (не трогать пока)'), 'url' => ['/resume/languages']],
+                ['label' => Yii::t('user', 'Skills (не трогать пока)'), 'url' => ['/resume/skills']],
+                ['label' => Yii::t('user', 'Experience (не трогать пока)'), 'url' => ['/resume/past-work']],
+                ['label' => Yii::t('user', 'Additional (не трогать пока)'), 'url' => ['/resume/additional']],
                 [
                     'label' => Yii::t('user', 'Networks'),
                     'url' => ['/user/settings/networks'],

@@ -46,6 +46,7 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Войти', 'url' => ['/user/security/login']];
     } else {
         $menuItems[] = ['label' => 'Профиль', 'url' => ['/user/profile']];
+        $menuItems[] = ['label' => 'Резюме', 'url' => ['/resume']];
         $menuItems[] = ['label' => 'Настройки', 'url' => ['/user/settings']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/user/security/logout'], 'post')

@@ -1,0 +1,51 @@
+.landing-content{
+    font-family: Open Sans;
+}
+.main-block{
+    background:url("landing_images/top_back_table.png");
+    background-size: cover;
+    padding: 15vw;
+    color: white;
+    text-align: center;
+}
+.category-block{
+    padding: 20px 50px;
+    height: 100%;
+}
+.btn{
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 20px;
+    margin-top: 10%;
+    padding:10px 20px;
+    
+}
+.category-block:hover{
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.category-block:hover .btn{
+    opacity: 1;
+    color: #fd0241;
+    font-weight: 600;
+}
+.body-content{
+    padding-top: 50px;
+}
+.left-text{
+    margin-top:0px;
+}
+.body-content .row{
+    margin: 50px 0px;
+}
+h2+h4{
+    color: #fd0241;
+}
+.body-content p{
+    line-height: 25px;
+    color: grey;
+}
+.advant{
+    background:grey;
+}

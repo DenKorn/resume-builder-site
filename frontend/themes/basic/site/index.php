@@ -7,33 +7,24 @@ LandingAsset::register($this);
 $this->title = 'Resume builder - главная';
 ?>
 <div class="landing-content">
-
-    <div class="main-block">
-        <div class="col-lg-4">
-            <img>
-            <h2>Примеры шаблонов</h2>
-            <p>оформление вашего резюме неординарно или строго согласно всем стандартам деловой документации</p>
-            <a class="btn btn-default">Просмотреть шаблоны</a>
-        </div>
-        <div class="col-lg-4">
-            <img>
+    <div class="main-block row">
+        <div class="category-block col-lg-6">
+            <img width="15%" src="css/landing_images/notepad.png">
             <h2>Создать резюме</h2>
-            <p>Создать профессиональное резюме, всего в несколько этапов с граммотной поачей ваших данных</p>
+            <p>Создать профессиональное резюме, всего в несколько этапов с граммотной подачей ваших данных</p>
             <a class="btn btn-default">ПЕРЕЙТИ К СОЗДАНИЮ</a>
         </div>
-        <div class="col-lg-4">
-            <img>
+        <div class="category-block col-lg-6">
+            <img width="15%" src="css/landing_images/magnifying-glass.png">
             <h2>О сервисе</h2>
             <p>Узнайте о всех возможностях сервиса ResumeBuilder, чтобы использовать его на все 100%</p>
-            <a class="btn btn-default">Справка</a>
+            <a class="btn btn-default">СПРАВКА</a>
         </div>
     </div>
-
-    <div class="body-content">
-
+    <div class="body-content container">
         <div class="row">
-           <div class="col-lg-2">
-                <h2>Что такое ResumeBuilder</h1>
+           <div class=" col-lg-2">
+                <h2 class="left-text">Что такое ResumeBuilder</h1>
                 <h4>от создания до управления</h3>
            </div>
            <p class="col-lg-9 col-lg-offset-1"> 
@@ -45,7 +36,7 @@ $this->title = 'Resume builder - главная';
            Вам возможность заниматься любимым делом. Помните, работа по призванию, не мечта, а реальность!
            </p>
         </div>
-        <div class="row">
+        <div class="row advant">
             <div class="col-lg-3">
                 <img>
                 <h4>УДОБНЫЙ ИНТЕРФЕЙС</h4>
@@ -72,8 +63,8 @@ $this->title = 'Resume builder - главная';
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-2">
-                <h2>Отзывы пользователей</h2>
+            <div class="left-text col-lg-2">
+                <h2 class="left-text">Отзывы пользователей</h2>
                 <h4>те, кто вышел на новый уровень</h4>
                 <p>Множество людей, желающих получить новое место работы, с радостью делятся впечатлениями
                  о нашем сервисе.</p>

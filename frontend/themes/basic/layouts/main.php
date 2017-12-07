@@ -35,12 +35,6 @@ AppAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top collapse navbar-collapse',
         ],
     ]);
-    $menuItems = [
-        ['label' => 'О продукте', 'url' => ['/site/about']],
-        ['label' => 'Возможности', 'url' => ['/site/abilities']],
-	['label' => 'Отзывы', 'url' => ['/site/feedbacks']],
-	['label' => 'Контакты', 'url' => ['/site/contact']]
-    ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Регистрация', 'url' => ['/user/registration/register']];
         $menuItems[] = ['label' => 'Войти', 'url' => ['/user/security/login']];
@@ -64,7 +58,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <div class="container">
+    <div class="container-fluid">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
